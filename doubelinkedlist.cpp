@@ -29,4 +29,22 @@ void addNode()
 
         if (START == NULL || newNode->noMhs == START->noMhs)
         {
-            
+            //step2: insert the new node at the beginning
+            // kondisi jika star tidak kosong dan noMhs node baru sama dengan noMhs
+            cout << "\033[31mDuplicate roll numbers not allowed\033]0m" << endl;
+            return;
+        }
+        
+        //jika list kosong, maka node next nya adalah START
+        newNode->next = START; // 3:make the new node point to the
+        // kondisi jika start tidak memiliki nilai atau tidak kosong
+        if (START != NULL)
+        {
+            START->prev = newNode; // 4. make the first node point to the new node
+        }
+        newNode->prev = NULL; // 5. make the new node point to NULL
+        START = newNode;      // 6. make the new node the first node
+    }
+    else
+    {
+        
