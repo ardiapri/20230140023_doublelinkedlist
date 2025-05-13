@@ -59,4 +59,8 @@ void addNode()
             current = current->next;
         }
         
+        // set nilai next node baru = current dan prey node baru = previous
+        newNode->next = current;
+        newNode->prev = previous;
+
         
