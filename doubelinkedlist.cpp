@@ -63,4 +63,16 @@ void addNode()
         newNode->next = current;
         newNode->prev = previous;
 
-        
+        // konidis jika current tidak sama dengan null
+        if (current != NULL)
+        {
+            current->prev = newNode;
+        }
+
+        if (previous != NULL)
+        {
+            previous->next = newNode;
+        }
+        else
+        {
+            
