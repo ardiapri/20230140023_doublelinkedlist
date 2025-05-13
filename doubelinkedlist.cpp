@@ -141,3 +141,8 @@ void deleteNode()
     cout << "\x1b[32mRecord with roll number " << rollNo << " deleted\x1b[0m" << endl;
 }
 
+// method untuk mengecek apakah list kosong
+bool listEmpty()
+{
+    return (START == NULL);
+}
