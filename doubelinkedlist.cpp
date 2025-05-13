@@ -11,3 +11,6 @@ struct Node
     Node* prev;
 };
 
+//deklarasi pointer start dan pemberian nilai
+Node* START = NULL;
+void addNode()
