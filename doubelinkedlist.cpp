@@ -52,4 +52,11 @@ void addNode()
         Node* current = START; // 1.a start from the first node
         Node* previous = NULL; // 1.b previous node is NULL initially
 
+        // lopping selama current != null noMhs dari current lebih kecil 
+        while (current != NULL && current->noMhs < newNode->noMhs)
+        {
+            previous = current;
+            current = current->next;
+        }
+        
         
